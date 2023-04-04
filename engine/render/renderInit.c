@@ -3,8 +3,6 @@
 
 #include <GL/glut.h>
 
-// void resize() {glutReshapeWindow(640, 480);}
-
 
 void createWindow(int argc, char* argv[], char* text, void (*init)(), void (*disFunc)(), 
 				  void (*butDown)(unsigned char, int, int), void (*butUp)(unsigned char, int, int)){
@@ -18,7 +16,6 @@ void createWindow(int argc, char* argv[], char* text, void (*init)(), void (*dis
 
 	init();
 	glutDisplayFunc(disFunc);
-	// glutReshapeFunc(resize);
 	glutKeyboardFunc(butDown);
 	glutKeyboardUpFunc(butUp);
 	glutMainLoop();

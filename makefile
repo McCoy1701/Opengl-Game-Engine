@@ -39,4 +39,4 @@ $(OBJ_DIR)/time.o: $(ENGINE_DIR)/time/time.c
 
 
 clean:
-	rm -r $(OBJ_DIR) $(BIN_DIR)
+	rm -rf $(OBJ_DIR) $(BIN_DIR)

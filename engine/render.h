@@ -25,9 +25,9 @@ extern ColorRGB white;
 extern ColorRGB black;
 
 
-void clearScreen();
+void clearScreen(void);
 
-void drawPixel(int x, int y);
+void drawPixel(int x, int y, int c);
 
 void drawLine(int x1, int y1, int x2, int y2, int thickness, ColorRGB color);
 
